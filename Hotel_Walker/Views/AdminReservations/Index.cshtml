@@ -1,0 +1,74 @@
+﻿<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                Room
+            </th>
+            <th>
+                Arrival Date
+            </th>
+            <th>
+                Departure Date
+            </th>
+            <th>
+                Price
+            </th>
+            <th>
+                Status
+            </th>
+            <th>
+                User
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.Reservations)
+        {
+            string color = "text-dark";
+            if (item.status == "Pending")
+            {
+                color = "text-warning";
+            }
+            else if (item.status == "Confirmed")
+            {
+                color = "text-success";
+            }
+            else if (item.status == "Declined")
+            {
+                color = "text-danger";
+            }
+            <tr>
+                <td>
+                    @item.room
+                </td>
+                <td>
+                    @item.arrivalDate
+                </td>
+                <td>
+                    @item.departureDate
+                </td>
+                <td>
+                    @item.price
+                </td>
+                <td class="@color">
+                    @item.status
+                </td>
+                <td>
+                    @item.user.UserName
+                </td>
+                @if (!item.isAccepted && !item.isCancelled)
+                {
+                    <td>
+                        <button class="btn btn-success">
+                            <a asp-action="Confirm" asp-route-id="@item.id" class="text-light">Confirm</a>
+                        </button>
+                        <button class="btn btn-danger">
+                            <a asp-action="Decline" asp-route-id="@item.id" class="text-light">Decline</a>
+                        </button>
+                    </td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>

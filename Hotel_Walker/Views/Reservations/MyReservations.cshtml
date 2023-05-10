@@ -26,15 +26,15 @@
             string color = "text-dark";
             if (item.status == "Pending")
             {
-                color = "text-warning";
+                color = "btn-outline-warning";
             }
             else if (item.status == "Confirmed")
             {
-                color = "text-success";
+                color = "btn-outline-success";
             }
             else if (item.status == "Declined")
             {
-                color = "text-danger";
+                color = "btn-outline-danger";
             }
             <tr>
                 <td>
@@ -49,8 +49,8 @@
                 <td>
                     @item.price
                 </td>
-                <td class="@color">
-                    @item.status
+                <td>
+                    <button class="btn @color" disabled>@item.status</button>
                 </td>
                 @if (item.status == "Pending")
                 {
@@ -58,6 +58,12 @@
                         <button class="btn btn-danger">
                             <a asp-action="Decline" asp-route-id="@item.id" class="text-light">Decline</a>
                         </button>
+                    </td>
+                }
+                else
+                {
+                    <td>
+                         <button class="btn btn-outline-secondary" style="opacity: 0.35;" disabled>Action done!</button>
                     </td>
                 }
             </tr>

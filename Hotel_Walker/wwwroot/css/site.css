@@ -16,3 +16,8 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+table {
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+}

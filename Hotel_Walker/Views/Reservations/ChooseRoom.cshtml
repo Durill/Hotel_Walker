@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Hotel_Walker.Models.Room>
 
-<table class="table">
-    <thead>
+<table class="table align-middle mb-0 bg-white">
+    <thead class="bg-light">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.RoomName)
@@ -30,7 +30,7 @@
                 </td>
                 <td>
                     <form action='@Url.Action("BookARoom", new {roomId = item.Id, arrivalDate = ViewBag.ArrivalDate, departureDate = ViewBag.DepartureDate})' method="post">
-                        <button class="btn btn-outline-success" type="submit">Book this room</button>
+                        <button class="btn btn-success" type="submit">Book this room</button>
                     </form>
                 </td>
             </tr>

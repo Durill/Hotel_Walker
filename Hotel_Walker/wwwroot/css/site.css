@@ -68,8 +68,20 @@ table {
 }
 
     .a__main:hover {
-        text-decoration: none;
         color: rgba(31, 31, 31, 1);
+    }
+
+.a__main--room {
+    text-decoration: none;
+    color: white;
+}
+
+    .a__main--room:hover {
+        color: rgba(11, 49, 64, 1);
+        background-color: rgba(149, 181, 194, 0.75);
+        padding: 5px;
+        border-radius: 15px;
+        border: solid 1px rgba(149, 181, 194, 0.75);
     }
 
 .home_texts {

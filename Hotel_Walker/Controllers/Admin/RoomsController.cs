@@ -91,7 +91,7 @@ namespace Hotel_Walker.Controllers.Admin
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,RoomName,NumberOfBeds,Price")] Room room)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,RoomName,NumberOfBeds,Price,IsActive")] Room room)
         {
             if (id != room.Id)
             {

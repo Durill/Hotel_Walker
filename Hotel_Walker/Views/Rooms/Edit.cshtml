@@ -3,16 +3,18 @@
 @{
     ViewData["Title"] = "Edit";
 }
-
+<div class="div__main text-center">
 <h1>Edit</h1>
 
 <h4>Room</h4>
 <hr />
 <div class="row">
+    <div class="col-md-4"></div>
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
+            <input type="hidden" asp-for="IsActive" />
             <div class="form-group">
                 <label asp-for="RoomName" class="control-label"></label>
                 <input asp-for="RoomName" class="form-control" />
@@ -28,15 +30,18 @@
                 <input asp-for="Price" class="form-control" />
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
+            <br />
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn btn-success" />
             </div>
         </form>
     </div>
+        <div class="col-md-4"></div>
 </div>
-
+<br />
 <div>
-    <a asp-action="Index">Back to List</a>
+        <a class="a__main--room" asp-action="Index">Back to List</a>
+</div>
 </div>
 
 @section Scripts {

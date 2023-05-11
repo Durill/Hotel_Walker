@@ -219,14 +219,14 @@ namespace Hotel_Walker.Data.Migrations
                         {
                             Id = "02174cf0–9412–4cfe-afbf-59f706d72cf6",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "02831648-47db-4551-b5cc-c5f9c9cc2dc2",
+                            ConcurrencyStamp = "55de3435-8325-4152-8c17-68321e8fe0a3",
                             Email = "admin@admin.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedUserName = "ADMIN@ADMIN.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEGN4gaX9UtvCpwOV6sXt7YZxIDhlzetbxv2oQ+toJchlEtX2ZNBFeS/0xaT597F3VQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAELCpjCBuzoFUEPiYiYWLZcB0POaDXXwH3tYabqryXCxGDD6/1oIp0UFOTzgIik433Q==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "b0bfb948-45b2-4a1d-becc-2c9688209e5e",
+                            SecurityStamp = "b5ea3693-bb11-47e4-9556-c957cb4da4f3",
                             TwoFactorEnabled = false,
                             UserName = "admin@admin.com"
                         });

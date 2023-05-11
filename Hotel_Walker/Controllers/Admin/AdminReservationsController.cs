@@ -22,7 +22,6 @@ namespace Hotel_Walker.Controllers.Admin
         public async Task<IActionResult> Index()
         {
             IdentityUser ussr = await _userManager.FindByIdAsync("c64fe004-2784-4733-bc9f-5afddb458225");
-            Console.WriteLine(ussr.UserName);
             ViewBag.Reservations = _context.Reservation.Select(reservation => new
             {
                 id = reservation.Id,

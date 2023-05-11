@@ -35,7 +35,11 @@ namespace Hotel_Walker.Controllers.User
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ChooseDate([Bind("Id, ArrivalDate, DepartureDate")] ReservationDTO reservationDTO)
         {
-            return RedirectToAction("ChooseRoom", reservationDTO);
+            if (ModelState.IsValid)
+            {
+                return RedirectToAction("ChooseRoom", reservationDTO);
+            }
+            return RedirectToAction("Index");
         }
 
         // GET: ChooseRoom

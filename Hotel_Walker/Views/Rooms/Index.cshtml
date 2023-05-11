@@ -4,15 +4,10 @@
     ViewData["Title"] = "Create new room";
 }
 
-
-<form asp-action="Create" method="get">
-    <h1 class="text-light text-center" style="background-color: rgba(0, 0, 0, 0.5); padding: 20px">Rooms - Create, Edit, Delete</h1>
-    <br />
-    <button type="submit" class="btn btn-success" style="font-size:25px; margin: 0 10px;" role="button">Create new Room</button>
-</form>
+<h1 class="text-light text-center" style="background-color: rgba(0, 0, 0, 0.5); padding: 20px">Rooms - Create, Edit, Delete</h1>
 <br />
-<table class="table align-middle mb-0 bg-white">
-    <thead class="bg-light">
+<table class="table align-middle mb-0 table__main">
+    <thead class="table__head">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.RoomName)
@@ -26,7 +21,7 @@
             <th></th>
         </tr>
     </thead>
-    <tbody>
+    <tbody style="color: white">
 @foreach (var item in Model) {
         <tr>
             <td>
@@ -54,3 +49,9 @@
 }
     </tbody>
 </table>
+<br />
+<form asp-action="Create" method="get">
+
+    <button type="submit" class="btn" style="font-size:25px; margin: 0 10px;background-color: rgba(102, 215, 237, 0.85);color: white;" role="button">Create new Room</button>
+</form>
+<br />

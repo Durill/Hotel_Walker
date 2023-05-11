@@ -22,9 +22,57 @@ body {
 table {
     font-family: 'Trebuchet MS', sans-serif;
     text-align: center;
+    
 }
 
+.table__main {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.table__head {
+    background-color: rgba(69, 77, 89, 0.85);
+    color: white;
+}
+
+.div__main {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 30px;
+}
+
+.active {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.sidenav {
+    background-color: #111;
+}
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+.a__main{
+    text-decoration: none;
+    color: white;
+}
+
+    .a__main:hover {
+        text-decoration: none;
+        color: rgba(31, 31, 31, 1);
+    }
+
 .home_texts {
-    color:rgba(255, 255, 255, 0.95);
-    font-family:'Times New Roman', Times, serif;
+    color: rgba(255, 255, 255, 0.95);
+    font-family: 'Times New Roman', Times, serif;
 }

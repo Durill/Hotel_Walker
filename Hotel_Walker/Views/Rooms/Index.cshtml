@@ -1,14 +1,16 @@
 ﻿@model IEnumerable<Hotel_Walker.Models.Room>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Create new room";
 }
 
-<h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<form asp-action="Create" method="get">
+    <h1 class="text-light text-center" style="background-color: rgba(0, 0, 0, 0.5); padding: 20px">Rooms - Create, Edit, Delete</h1>
+    <br />
+    <button type="submit" class="btn btn-success" style="font-size:25px; margin: 0 10px;" role="button">Create new Room</button>
+</form>
+<br />
 <table class="table align-middle mb-0 bg-white">
     <thead class="bg-light">
         <tr>

@@ -15,9 +15,16 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-image: url("../img/hotel_walker_bg_photo.jpg");
+  background-size: 100%;
 }
 
 table {
     font-family: 'Trebuchet MS', sans-serif;
     text-align: center;
+}
+
+.home_texts {
+    color:rgba(255, 255, 255, 0.95);
+    font-family:'Times New Roman', Times, serif;
 }

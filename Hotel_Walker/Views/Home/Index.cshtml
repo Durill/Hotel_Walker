@@ -1,8 +1,12 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <div style="margin-top: 35px;">
+        <button onclick="window.location.href = '/Abouts';" class="btn btn-outline-light" style="font-size:25px; margin: 0 10px;">About us</button>
+        <button onclick="window.location.href = '/Identity/Account/Login';" class="btn btn-outline-light" style="font-size:25px; margin: 0 10px;">Login</button>
+        <button onclick="window.location.href = '/Identity/Account/Register';" class="btn btn-outline-light" style="font-size:25px; margin: 0 10px;">Register</button>
+    </div>
+    <img src="img/logo_home_XL.png" alt="Hotel Walker Home" style="height: auto; width: 60%;" />
 </div>

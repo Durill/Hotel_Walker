@@ -14,7 +14,7 @@ Celem aplikacji internetowej jest skupienie bieżących ofert pokoi do wynajęci
 Użytkownik będzie również w stanie sprawdzić status swojej rezerwacji, odwołać ją jeśli nie została jeszcze zatwierdzona przez administratora oraz edytować swoje dane. Administrator aplikacji będzie miał możliwość dodawania/usuwania pokoi oraz podglądu i zatwierdzania/anulowania rezerwacji.
 
 ## Technologie
-Aplikacja została zrealizowana w architekturze klient-serwer w oparciu o wzorzec MVC (Model-View-Controller). Wykorzystana została technologia ASP.NET 6 wraz z bazą MSSQL. Cała aplikacja została zdeployowana na usłudzie hostingowej Azure oraz jako backup SmarterASP.NET
+Aplikacja została zrealizowana w architekturze klient-serwer w oparciu o wzorzec MVC (Model-View-Controller). Wykorzystana została technologia ASP.NET 6.0 wraz z bazą MSSQL. Cała aplikacja została zdeployowana na usłudzie hostingowej Azure oraz jako backup SmarterASP.NET
 
 ## Diagram przypadków użycia
 ![przypadki_użycia_REZERWACJA drawio (5)](https://github.com/Durill/Hotel_Walker/assets/70134706/2e409dcf-a04b-441f-9e4d-7101ae7e1da0)

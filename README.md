@@ -5,6 +5,7 @@
 * [Technologie](#technologie)
 * [Diagram przypadków użycia](#diagram-przypadków-użycia)
 * [Diagram klas](#diagram-klas)
+* [Instalacja](#instalacja)
 * [Autor](#autor)
 
 
@@ -20,6 +21,14 @@ Aplikacja została zrealizowana w architekturze klient-serwer w oparciu o wzorze
 
 ## Diagram klas
 ![Diagram_klas_Hotel_Walker_dark drawio](https://github.com/Durill/Hotel_Walker/assets/70134706/26bc6ce2-31c0-42a3-b089-ebe234b73b8d)
+
+## Instalacja
+Jeśli chcesz wypróbować aplikację lokalnie, wystarczy ściągnąc repozytorium uruchomić je w programie Microsoft Visual Studio.
+Następnie w konsoli menadżera pakietów NuGet wykonać poniższą komendę
+```
+update-database
+```
+Teraz można bez przeszkód uruchomić projekt lokalnie
 
 ## Autor
 Wojciech Batorski

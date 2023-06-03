@@ -2,6 +2,8 @@
 
 # Spis treści
 * [Opis aplikacji](#opis-aplikacji)
+* [Technologie](#technologie)
+* [Diagram przypadków użycia](#diagram-przypadków-użycia)
 * [Diagram klas](#diagram-klas)
 * [Autor](#autor)
 

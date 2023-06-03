@@ -29,10 +29,10 @@ login: admin@admin.com
 hasło: Qwerty1234%
 ```
 
-## Diagram przypadków użycia
+## Diagram przypadków użycia (kliknij by powiększyć)
 ![przypadki_użycia_REZERWACJA drawio (5)](https://github.com/Durill/Hotel_Walker/assets/70134706/2e409dcf-a04b-441f-9e4d-7101ae7e1da0)
 
-## Diagram klas
+## Diagram klas (kliknij by powiększyć)
 ![Diagram_klas_Hotel_Walker_dark drawio](https://github.com/Durill/Hotel_Walker/assets/70134706/26bc6ce2-31c0-42a3-b089-ebe234b73b8d)
 
 ## Instalacja

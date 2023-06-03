@@ -20,9 +20,6 @@
             <th>
                 Status
             </th>
-            <th>
-                User
-            </th>
             <th></th>
         </tr>
     </thead>
@@ -57,9 +54,6 @@
                 </td>
                 <td>
                     <button class="btn @color" disabled>@item.status</button>
-                </td>
-                <td>
-                    @item.user.UserName
                 </td>
                 @if (!item.isAccepted && !item.isCancelled)
                 {

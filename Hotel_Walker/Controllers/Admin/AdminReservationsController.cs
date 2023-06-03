@@ -21,7 +21,6 @@ namespace Hotel_Walker.Controllers.Admin
 
         public async Task<IActionResult> Index()
         {
-            IdentityUser ussr = await _userManager.FindByIdAsync("c64fe004-2784-4733-bc9f-5afddb458225");
             ViewBag.Reservations = _context.Reservation.Select(reservation => new
             {
                 id = reservation.Id,
@@ -30,7 +29,6 @@ namespace Hotel_Walker.Controllers.Admin
                 departureDate = reservation.DepartureDate.ToShortDateString(),
                 price = (int?)_context.Room.Where(room => room.Id == reservation.RoomId).Select(room => room.Price * reservation.PaidDays).FirstOrDefault(),
                 status = reservation.Status,
-                user = _userManager.FindByIdAsync(reservation.User.Id).Result,
                 isAccepted = reservation.IsAccepted,
                 isCancelled = reservation.IsCancelled
             });

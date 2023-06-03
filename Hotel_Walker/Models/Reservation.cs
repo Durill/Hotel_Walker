@@ -7,8 +7,8 @@ namespace Hotel_Walker.Models
     {
         public int Id { get; set; }
         public int RoomId { get; set; }
-        public string UserId { get; set; }
-        public IdentityUser User { get; set; }
+        public string? UserId { get; set; }
+        public virtual IdentityUser? User { get; set; }
 
         [Display(Name = "Arrival date")]
         public DateTime ArrivalDate { get; set; }

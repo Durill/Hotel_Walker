@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mssql2": {
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/hotel-walkerdbserver/databases/Hotel_Walker_db_2",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:hotel_walker_db_2"
+    }
+  }
+}

@@ -15,6 +15,19 @@ Użytkownik będzie również w stanie sprawdzić status swojej rezerwacji, odwo
 
 ## Technologie
 Aplikacja została zrealizowana w architekturze klient-serwer w oparciu o wzorzec MVC (Model-View-Controller). Wykorzystana została technologia ASP.NET 6.0 wraz z bazą MSSQL. Cała aplikacja została zdeployowana na usłudzie hostingowej Azure oraz jako backup SmarterASP.NET
+</br></br>
+Azure -> https://hotelwalker20230603154557.azurewebsites.net/
+</br>
+SmarterASP.NET (backup link) -> http://pzx90787-001-site1.itempurl.com/
+</br>
+
+Dane logowania do konta admina
+</br>
+*(jeśli te dane by nie działały, ktoś może je zmienić będąc w panelu, proszę o kontakt mailowy na adres pzx90787@student.wsb.poznan.pl)*:
+```
+login: admin@admin.com
+hasło: Qwerty1234%
+```
 
 ## Diagram przypadków użycia
 ![przypadki_użycia_REZERWACJA drawio (5)](https://github.com/Durill/Hotel_Walker/assets/70134706/2e409dcf-a04b-441f-9e4d-7101ae7e1da0)

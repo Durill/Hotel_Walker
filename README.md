@@ -1,13 +1,23 @@
-# Hotel_Walker
+# Dokumentacja projektu Hotel Walker
 
-# Content of Project
-* [General info](#general-info)
-* [Authors](#authors)
-
-
-## General info
-This project contains a web application created for the course <b>"Advanced Programming" taught by Dr. P. Płaczek at WSB University.</b> The website allows you to register and log in to book a room in a virtual hotel. You can also manage your details and bookings. You can also log in as an app administrator to manage your bookings and the entire hotel.
+# Spis treści
+* [Opis aplikacji](#opis-aplikacji)
+* [Diagram klas](#diagram-klas)
+* [Autor](#autor)
 
 
-## Authors
+## Opis aplikacji
+Celem aplikacji internetowej jest skupienie bieżących ofert pokoi do wynajęcia w Hotelu Walker. Użytkownik po zarejestrowaniu i zalogowaniu będzie w stanie znaleźć oraz zarezerwować pokój w wybranym przez siebie terminie.
+Użytkownik będzie również w stanie sprawdzić status swojej rezerwacji, odwołać ją jeśli nie została jeszcze zatwierdzona przez administratora oraz edytować swoje dane. Administrator aplikacji będzie miał możliwość dodawania/usuwania pokoi oraz podglądu i zatwierdzania/anulowania rezerwacji.
+
+## Technologie
+Aplikacja została zrealizowana w architekturze klient-serwer w oparciu o wzorzec MVC (Model-View-Controller). Wykorzystana została technologia ASP.NET 6 wraz z bazą MSSQL. Cała aplikacja została zdeployowana na usłudzie hostingowej Azure oraz jako backup SmarterASP.NET
+
+## Diagram przypadków użycia
+![przypadki_użycia_REZERWACJA drawio (5)](https://github.com/Durill/Hotel_Walker/assets/70134706/2e409dcf-a04b-441f-9e4d-7101ae7e1da0)
+
+## Diagram klas
+![Diagram_klas_Hotel_Walker_dark drawio](https://github.com/Durill/Hotel_Walker/assets/70134706/26bc6ce2-31c0-42a3-b089-ebe234b73b8d)
+
+## Autor
 Wojciech Batorski
